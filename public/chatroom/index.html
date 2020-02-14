@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>chat-room</title>
+</head>
+<body>
+  <h2>chat-room</h2>
+  <div>
+    <label>
+      username:
+      <input name='username' id='username' />
+    </label>
+  </div>
+  <div>
+      <label>
+          room:
+          <input name='roomId' id='room' />
+        </label>
+        <button id='connect'>connect</button>
+        <button disabled id='disconnect'>disconnect</button>
+        status:<span id='status'>disconnected</span>
+  </div>
+  <div>content:</div>
+  <textarea disabled name="send-content" id="output" cols="30" rows="10"></textarea>
+  <div>
+    <span>input:</span>
+      <textarea disabled name="send-content" id="send-content" cols="30" rows="10"></textarea>
+  </div>
+  
+  <div>
+    <button disabled id='send'>send</button>
+  </div>
+  <script src="./socket.io-client.js"></script>
+  <script src="./index.js"></script>
+</body>
+</html>

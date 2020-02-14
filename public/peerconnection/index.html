@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>peer-connection</title>
+</head>
+<body>
+  <div>
+      <div>
+          local: <video id='localvideo' playsinline autoplay></video>
+          <textarea disabled id="local-sdp" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            remote: <video id='remotevideo' playsinline autoplay></video>
+            <textarea disabled id="remote-sdp" cols="30" rows="10"></textarea>
+          </div>
+  </div>
+  
+  
+    <div>
+      <button id="start">Start</button>
+      <button id="call">Call</button>
+      <button id="hangup">HangUp</button>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
